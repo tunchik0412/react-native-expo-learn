@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Notification } from 'expo-notifications';
 import * as Notifications from 'expo-notifications';
 import Constants from 'expo-constants';
-import Permissions from 'expo-permissions';
+import * as Permissions from 'expo-permissions';
 import { Platform } from 'react-native';
 import { NotificationBehavior } from 'expo-notifications/src/Notifications.types';
 import { NotificationRequestInput } from 'expo-notifications/build/Notifications.types';
