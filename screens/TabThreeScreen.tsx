@@ -10,17 +10,14 @@ export default function NotificationView() {
     }
     const { token, pushNotification: _pushNotification, notification } = useNotifications({notificationHandler});
 
-    const pushNotification = () => {
-        _pushNotification({
+    const pushNotification = async () => {
+        await _pushNotification({
             content: {
                 title: 'title',
                 body: 'body'
             },
             trigger: {
-                hour: 0,
-                minute: 0,
-                second: 2,
-                repeats: true
+                seconds: 2
             }
         })
     }
